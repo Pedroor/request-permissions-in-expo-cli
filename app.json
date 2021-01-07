@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "permissions",
-    "slug": "permissions",
+    "name": "testing",
+    "slug": "testing",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,11 +13,13 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "O Cardfi necessita do acesso a sua câmera para escanear QRCodes como também alterar sua foto de perfil.",
+        "NSPhotoLibraryUsageDescription": "O Cardfi necessita do acesso a sua câmera para alterar sua foto de perfil."
+      }
     },
     "android": {
       "adaptiveIcon": {
